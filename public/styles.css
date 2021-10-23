@@ -1,0 +1,17 @@
+body{
+  background: lightgrey;
+  text-align: center;
+}
+h3{
+  margin-top: 40px;
+}
+/* .addMsg{
+  clear: both;
+  display: inline-block;
+} */
+.message{
+  margin: 10px;
+}
+li{
+  list-style: none;
+}

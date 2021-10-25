@@ -4,8 +4,9 @@ const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 var db, collection;
 
-require('dotenv').config()
-const url = process.env.DB_URL
+// require('dotenv').config()
+// const url = process.env.DB_URL
+const url = "mongodb+srv://devdaph:tPshcQuYG0ltFxR9@cluster0.h8uhl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 const dbName = "demo";
 
 app.listen(3000, () => {
@@ -14,7 +15,7 @@ app.listen(3000, () => {
             throw error;
         }
         db = client.db(dbName);
-        console.log("Connected to `" + dbName + "`!");
+        console.log("Connected to host 3000`" + dbName + "`!");
     });
 });
 
